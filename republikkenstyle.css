@@ -1,0 +1,27 @@
+/*--------------GENERAL SETTINGS START---------------*/
+
+body {
+    margin: 0;
+    background-color: black;
+
+}
+
+h1 {
+    color: darkslategray;
+}
+
+h2,
+h4 {
+    color: lemonchiffon;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/*--------------GENERAL SETTINGS END---------------*/
+
+/*--------------BRUGER MENU START---------------*/
+
+/*--------------BRUGER MENU END---------------*/
