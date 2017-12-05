@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: black;
 
+
 }
 
 
@@ -26,6 +27,23 @@ a {
 /*--------------BRUGER MENU START---------------*/
 
 /* EXAMPLE OF HOW A TOP MENU COULD LOOK*/
+
+header {
+    position: fixed;
+    margin-top: -21.2px;
+    /*** Ligger fast på skærmen når man scroller! ***/
+    /*** gradient på "ultimate css gradient generator***/
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 60%);
+    width: 105%;
+}
+
+header nav {
+    /*** man har derved defineret KUN headerens nav***/
+    font-family: 'Baloo Tammudu', cursive;
+    text-align: right;
+    margin: 0 5vw 0 0;
+    word-spacing: 1vw;
+}
 
 .navbar {
 
