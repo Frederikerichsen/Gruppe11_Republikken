@@ -1,45 +1,377 @@
 /*--------------GENERAL SETTINGS START---------------*/
 
+
 body {
+    background-color: #ff806d;
     margin: 0;
     padding: 0;
-    background-color: black;
 }
 
-#overskrift {
-    padding-top: 60px;
+* {
+    box-sizing: border-box;
 }
 
-h1 {
-    color: darkslategray;
-}
 
-h2,
-h4 {
-    color: lemonchiffon;
+#needs,
+#approach,
+#benefits,
+#action,
+#competition,
+#site,
+#app,
+#gruppe,
+#pitch{
+    max-width: 1800px;
+    /*KONTROLLERER MAX BREDDE PÅ DINE SECTIONS*/
+    margin: 0 auto;
+    text-align: center;
 }
 
 a {
     text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: black;
 }
 
 /*--------------GENERAL SETTINGS END---------------*/
 
-/*--------------BRUGER MENU START---------------*/
-
-/* EXAMPLE OF HOW A TOP MENU COULD LOOK*/
+/*-----------------MENU--------------------*/
 
 header {
     position: fixed;
+    background: rgba(112, 56, 48, 0.88);
+    width: 100vw;
+    padding: .5em;
+    z-index: 100;
+}
+
+header nav {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0 2vw 0 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #ff806d;
+    padding-left: 10px;
+    display: block;
+}
+
+header nav a:hover {
+    color: #ffffff;
+    /*en anden farve når musen går henover*/
+}
+
+@media screen and (min-width: 668px) {
+    /*Så bliver menuen på række inden når formaten bliver større end ipad*/
+    header nav a {
+        display: inline-block;
+    }
+}
+
+#eksempler .column_content a{
+    text-decoration: underline;
+    color: #006465;
+}
+#eksempler .column_content a:hover {
+    color: black;
+    /*en anden farve når musen går henover*/
+}
+
+/*---------------------FONTE-----------------------*/
+
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 5em;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 4em;
+    margin: 50px 0 0 0;
+    padding: 5px;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 1.5em;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+strong {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 1rem;
+}
+
+footer {
+    margin: 10px;
+}
+
+
+/*------------SPLASH---------------*/
+
+#splash {
+    width: 100vw;
+    height: 167.2vw;
+    background-image:url(new_media/desktop.png);
+    background-size: cover;
+}
+
+#splash img {
+    width: 100%;
+}
+
+
+/*--------------MEDIA QUERIES-------------*/
+
+@media screen and (min-width: 1025px) and (orientation:landscape) {
+    #splash {
+        height: 56.3vw;
+        background-image:url(new_media/desktop.png);
+    }
+    #splash img {
+        width: 100%;
+    }
+    nav {
+        font-size: 2em;
+    }
+}
+
+/*--------------------app--------------------*/
+
+#app {
+    background-color: #ffd1c1;
+    height: 900px;
+}
+
+#app img {
+    width: 22vw;
+}
+#app video {
+    width: 17vw;
+}
+
+#app .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#app .text_app {
+    flex-grow: 1;
+    width: 50vw;
+    flex-basis: 300px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#app .video_app {
+    flex-grow: 1;
+    padding: 0 4vw;
+    flex-basis: 300px;
+    position: relative;
+}
+
+.iphone {
+    position: absolute;
+    z-index: 20;
+}
+
+.video {
+   position: absolute;
+    top: 5.2vw;
+    left: 6.5vw;
+}
+/*-------------------needs----------------------*/
+
+#needs {
+    background-color:#ffd1c1;
+}
+
+#needs .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#needs .column {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#needs img {
+    width: 200px;
+}
+
+/*----------------approach----------------*/
+
+#approach {
+    background-color: #ffd1c1;
+}
+
+#approach .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#approach .column_wide {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#approach .column_narrow {
+    flex-grow: 1;
+    flex-basis: 300px;
+    /*padding: 50px;
+    margin: 5px;*/
+}
+
+/*---------------benefits------------------*/
+
+#benefits {
+    background-color:#ffd1c1;
+}
+
+#benefits img {
+    width: 100%;
+    align-self: flex-end;
+}
+
+#benefits .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#benefits .column_wide {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 5px;
+    padding: 5px;
+    height: auto;
+}
+
+#benefits .column_narrow {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 5px;
+    padding: 5px;
+    height: auto;
+}
+
+
+/*--------------------competition--------------------*/
+
+#competition {
+    background-color:#ffd1c1;
+}
+
+#competition .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#competition .content {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 5px;
+    padding: 5px;
+}
+
+/*--------------------action--------------------*/
+
+#action {
+    background-color: #ffd1c1;
+}
+
+#action .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#action .content{
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+/*--------------------site--------------------*/
+
+#site {
+    background-color: #ffd1c1;
+}
+
+#site .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*--------------------action--------------------*/
+
+#gruppe {
+    background-color: #ffd1c1;
+    margin: 0 auto;
+}
+#gruppe img {
+    width: 8vw;
+}
+
+.navn {
+    padding: .5vw 3vw 3vw 3vw;
+    text-align: center;
+}
+
+#gruppe .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/*--------------------Pitch--------------------*/
+
+#pitch {
+    background-color: #ffd1c1;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#pitch .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*--------------BRUGER MENU START---------------*/
+
+/* EXAMPLE OF HOW A TOP MENU COULD LOOK*/
+/*
+#dok_header {
+    position: fixed;
     /*** Ligger fast på skærmen når man scroller! ***/
-    /*** gradient på "ultimate css gradient generator***/
+    /*** gradient på "ultimate css gradient generator***//*
     background: linear-gradient(to left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 60%);
     width: 105%;
 }
 
-header nav {
+#dok_header #dok_nav {
     /*** man har derved defineret KUN headerens nav***/
-    font-family: 'Baloo Tammudu', cursive;
+  /* font-family: 'Baloo Tammudu', cursive;
     text-align: right;
     margin: 0 5vw 0 0;
     word-spacing: 1vw;
