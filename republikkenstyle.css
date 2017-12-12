@@ -1,8 +1,9 @@
 /*--------------GENERAL SETTINGS START---------------*/
 
-
 body {
-    background-color: #ff806d;
+    background-image: url(new_media/background.jpg);
+    background-repeat: repeat;
+    background-size: contain;
     margin: 0;
     padding: 0;
 }
@@ -20,7 +21,7 @@ body {
 #site,
 #app,
 #gruppe,
-#pitch{
+#pitch {
     max-width: 1800px;
     /*KONTROLLERER MAX BREDDE PÅ DINE SECTIONS*/
     margin: 0 auto;
@@ -42,7 +43,7 @@ a:hover {
 
 .pres_header {
     position: fixed;
-    background: rgba(112, 56, 48, 0.88);
+    background: rgba(0, 0, 0, 0.71);
     width: 100vw;
     padding: .5em;
     z-index: 100;
@@ -50,20 +51,20 @@ a:hover {
 
 .pres_header nav {
     font-family: "Open Sans", sans-serif;
-    font-size: 2.5em;
+    font-size: 1.5em;
     text-align: center;
     margin: 0 2vw 0 0;
 }
 
 .pres_header nav a {
     text-decoration: none;
-    color: #ff806d;
-    padding-left: 10px;
+    color: #ffffff;
+    padding-left: 50px;
     display: block;
 }
 
 .pres_header nav a:hover {
-    color: #ffffff;
+    color: #BD9882;
     /*en anden farve når musen går henover*/
 }
 
@@ -74,17 +75,17 @@ a:hover {
     }
 }
 
-#eksempler .column_content a{
+#eksempler .column_content a {
     text-decoration: underline;
     color: #006465;
 }
+
 #eksempler .column_content a:hover {
     color: black;
     /*en anden farve når musen går henover*/
 }
 
 /*---------------------FONTE-----------------------*/
-
 
 h1 {
     font-family: 'Open Sans', sans-serif;
@@ -94,8 +95,8 @@ h1 {
 
 h2 {
     font-family: 'Open Sans', sans-serif;
-    color: white;
-    font-size: 4em;
+    color: black;
+    font-size: 2.5em;
     margin: 50px 0 0 0;
     padding: 5px;
 }
@@ -104,6 +105,11 @@ h3 {
     font-family: 'Open Sans', sans-serif;
     color: black;
     font-size: 1.5em;
+}
+#dok_style h2 {
+    color: black;
+    font-size: 2.5em;
+}
 }
 
 h4 {
@@ -119,7 +125,7 @@ strong {
 p {
     font-family: 'Open Sans', sans-serif;
     color: black;
-    font-size: 1rem;
+    font-size: 1.2em;
 }
 
 footer {
@@ -132,7 +138,7 @@ footer {
 #splash {
     width: 100vw;
     height: 167.2vw;
-    background-image:url(new_media/desktop.png);
+    background-image: url(new_media/desktop2.png);
     background-size: cover;
 }
 
@@ -146,7 +152,7 @@ footer {
 @media screen and (min-width: 1025px) and (orientation:landscape) {
     #splash {
         height: 56.3vw;
-        background-image:url(new_media/desktop.png);
+        background-image: url(new_media/desktop2.png);
     }
     #splash img {
         width: 100%;
@@ -159,13 +165,14 @@ footer {
 /*--------------------app--------------------*/
 
 #app {
-    background-color: #ffd1c1;
+    background-color: rgba(255, 255, 255, 0.74);
     height: 900px;
 }
 
 #app img {
     width: 22vw;
 }
+
 #app video {
     width: 17vw;
 }
@@ -185,7 +192,7 @@ footer {
 
 #app .video_app {
     flex-grow: 1;
-    padding: 0 4vw;
+    padding: 1.9vw 4vw;
     flex-basis: 300px;
     position: relative;
 }
@@ -196,14 +203,15 @@ footer {
 }
 
 .video {
-   position: absolute;
-    top: 5.2vw;
+    position: absolute;
+    top: 7vw;
     left: 6.5vw;
 }
+
 /*-------------------needs----------------------*/
 
 #needs {
-    background-color:#ffd1c1;
+    background-color: rgba(255, 255, 255, 0.74);
 }
 
 #needs .sectionwrapper {
@@ -223,7 +231,7 @@ footer {
 /*----------------approach----------------*/
 
 #approach {
-    background-color: #ffd1c1;
+    background-color: rgba(255, 255, 255, 0.74);
 }
 
 #approach .sectionwrapper {
@@ -247,7 +255,7 @@ footer {
 /*---------------benefits------------------*/
 
 #benefits {
-    background-color:#ffd1c1;
+    background-color: rgba(255, 255, 255, 0.74);
 }
 
 #benefits img {
@@ -280,7 +288,7 @@ footer {
 /*--------------------competition--------------------*/
 
 #competition {
-    background-color:#ffd1c1;
+    background-color: rgba(255, 255, 255, 0.74);
 }
 
 #competition .sectionwrapper {
@@ -298,7 +306,7 @@ footer {
 /*--------------------action--------------------*/
 
 #action {
-    background-color: #ffd1c1;
+    background-color: rgba(255, 255, 255, 0.74);
 }
 
 #action .sectionwrapper {
@@ -306,7 +314,7 @@ footer {
     flex-wrap: wrap;
 }
 
-#action .content{
+#action .content {
     flex-grow: 1;
     flex-basis: 300px;
 }
@@ -314,7 +322,7 @@ footer {
 /*--------------------site--------------------*/
 
 #site {
-    background-color: #ffd1c1;
+    background-color: rgba(255, 255, 255, 0.74);
 }
 
 #site .sectionwrapper {
@@ -325,9 +333,10 @@ footer {
 /*--------------------action--------------------*/
 
 #gruppe {
-    background-color: #ffd1c1;
+    background-color: rgba(255, 255, 255, 0.74);
     margin: 0 auto;
 }
+
 #gruppe img {
     width: 8vw;
 }
@@ -346,7 +355,7 @@ footer {
 /*--------------------Pitch--------------------*/
 
 #pitch {
-    background-color: #ffd1c1;
+    background-color: rgba(255, 255, 255, 0.74);
     margin: 0 auto;
     text-align: center;
 }
@@ -365,32 +374,27 @@ footer {
 
 /*!!!!!!!!!!!!!!!!!DOKUMENTATIONSSITE!!!!!!!!!!!!!!!!!!!*/
 
-
-
-
-
-
 /*--------------DROPDOWN MENU---------------*/
 
-
 .dropbtn {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     color: white;
-    padding: 1% 5%;
-    font-size: 2em;
+    padding: .5% 5%;
+    font-size: 1.5em;
     border: none;
     cursor: pointer;
     position: relative;
     font-family: 'Open Sans', sans-serif;
+    text-align: left;
 
 }
 
 .dropdown {
     position: fixed;
     top: 0;
-    display:inline-block;
+    display: inline-block;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.56);
+    background-color: rgba(0, 0, 0, 0.71);
     padding: 0;
     margin: 0;
 }
@@ -398,9 +402,9 @@ footer {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #2e2e2e;
+    background-color: #242424;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -410,18 +414,21 @@ footer {
     text-decoration: none;
     display: block;
     font-family: 'Open Sans', sans-serif;
-    font-size: .8em;
+    font-size: .5em;
 }
 
-.dropdown-content a:hover {background-color: #000000}
+.dropdown-content a:hover {
+    background-color: rgba(13, 13, 13, 0.88);
+    color: #BD9882;
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* EXAMPLE OF HOW A TOP MENU COULD LOOK*/
 .dropdown:hover .dropbtn {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
+    color: #BD9882;
 }
 
 
@@ -439,44 +446,75 @@ footer {
 #datakodning,
 #benchmarking,
 #idevalg,
-#app_design
-{
+#app_design,
+#sectionwrapper_links{
     max-width: 1800px;
     /*KONTROLLERER MAX BREDDE PÅ DINE SECTIONS*/
     margin: 0 auto;
     text-align: center;
 }
 
-#overskrift
-{
+#overskrift {
     margin: 5%;
 
     text-align: center;
 }
 
-#overskrift img
-{
+#overskrift img {
     margin: 0;
 }
 
-#overskrift h1
-{
-    color: white;
+#overskrift h1 {
+    color: black;
     padding: 0;
     margin: 0;
 }
-#overskrift h2
-{
+
+#overskrift h2 {
     color: black;
     padding: 1% 0;
     margin: 0;
 }
 
+#dok_style {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#dok_style a{
+    color: black;
+}
+
+#dok_style a:hover{
+    color: #BD9882;
+}
+
+#dok_style p {
+    font-size: 1.1em;
+}
+#dok_style h2 {
+    font-size: 2.5em;
+}
+
+#dok_style li {
+    font-size: 1.1em;
+    padding: 5px 0;
+    font-weight: 200;
+}
+
+#dok_style i {
+    font-size: 1em;
+    padding: 5px 0;
+}
+#dok_style b {
+    font-size: 1.1em;
+}
+
+
 
 /*--------------RESEARCH START---------------*/
 
 #research_markedet {
-    background-color: #ffd1c1;
+    background-color: rgba(255, 255, 255, 0.74);
 }
 
 #research_markedet .sectionwrapper {
@@ -484,7 +522,7 @@ footer {
     flex-wrap: wrap;
 }
 
-#research_markedet .column{
+#research_markedet .column {
     flex-grow: 1;
     flex-basis: 300px;
 }
@@ -494,7 +532,7 @@ footer {
 /*--------------BRUGERINTERVIEW START---------------*/
 
 #brugerinterview {
-    background-color: #ffd1c1;
+    background-color: rgba(255, 255, 255, 0.74);
 }
 
 #brugerinterview .sectionwrapper {
@@ -502,7 +540,7 @@ footer {
     flex-wrap: wrap;
 }
 
-#brugerinterview .column{
+#brugerinterview .column {
     flex-grow: 1;
     flex-basis: 300px;
 }
@@ -512,7 +550,7 @@ footer {
 /*--------------PERSONA START---------------*/
 
 #persona {
-    background-color: #ffd1c1;
+    background-color: rgba(255, 255, 255, 0.74);
 }
 
 #persona .sectionwrapper {
@@ -520,31 +558,30 @@ footer {
     flex-wrap: wrap;
 }
 
-#persona .column{
+#persona .column {
     flex-grow: 1;
     flex-basis: 300px;
 }
 
-#persona img{
+#persona img {
     width: 400px;
 }
 
-#persona p{
+#persona p {
     margin: 2% 10%;
 }
 
 /*--------------PERSONA SLUT---------------*/
 
-
-
 /*--------------FORRETNINGSMODEL START---------------*/
+
 #sectionwrapper {
     display: flex;
     flex-wrap: wrap;
 }
 
 #forretningsmodel {
-    background-color: #ffd1c1;
+    background-color: rgba(255, 255, 255, 0.74);
     flex-basis: 300px;
 
 }
@@ -565,18 +602,17 @@ footer {
 
 /*--------------FORRETNINGSMODEL SLUT---------------*/
 
-
 /*--------------EXPERIENCE MAP START---------------*/
 
 #experience_map {
-    background-color: #ffd1c1;
+    background-color: rgba(255, 255, 255, 0.74);
 }
 
-#experience_map p{
+#experience_map p {
     padding: 1% 10%;
 }
 
-#experience_map .sectionwrapper{
+#experience_map .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
 }
@@ -599,7 +635,7 @@ footer {
 /*--------------PAPERPROTOTYPE 1 START---------------*/
 
 #paperprototype_1 {
-    background-color: #ffd1c1;
+    background-color: rgba(255, 255, 255, 0.74);
 }
 
 #paperprototype_1 .sectionwrapper {
@@ -607,18 +643,25 @@ footer {
     flex-wrap: wrap;
 }
 
-#paperprototype_1 .column{
+#paperprototype_1 .column {
     flex-grow: 1;
     flex-basis: 300px;
 }
 
-/*--------------PAPERPROTOTYPE 1 SLUT---------------*/
+#paperprototype_1 img {
+    width: 30%;
+}
 
+#paperprototype_1 img:hover {
+    transform: scale(1.5);
+}
+
+/*--------------PAPERPROTOTYPE 1 SLUT---------------*/
 
 /*--------------PAPERPROTOTYPE 2 START---------------*/
 
 #paperprototype_2 {
-    background-color: #ffd1c1;
+    background-color: rgba(255, 255, 255, 0.74);
 }
 
 #paperprototype_2 .sectionwrapper {
@@ -626,18 +669,25 @@ footer {
     flex-wrap: wrap;
 }
 
-#paperprototype_2 .column{
+#paperprototype_2 .column {
     flex-grow: 1;
     flex-basis: 300px;
 }
 
-/*--------------PAPERPROTOTYPE 2 SLUT---------------*/
+#paperprototype_2 img {
+    width: 30%;
+}
 
+#paperprototype_2 img:hover {
+    transform: scale(1.5);
+}
+
+/*--------------PAPERPROTOTYPE 2 SLUT---------------*/
 
 /*--------------PAPERPROTOTYPE 3 START---------------*/
 
 #paperprototype_3 {
-    background-color: #ffd1c1;
+    background-color: rgba(255, 255, 255, 0.74);
 }
 
 #paperprototype_3 .sectionwrapper {
@@ -645,9 +695,17 @@ footer {
     flex-wrap: wrap;
 }
 
-#paperprototype_3 .column{
+#paperprototype_3 .column {
     flex-grow: 1;
     flex-basis: 300px;
+}
+
+#paperprototype_3 img {
+    width: 30%;
+}
+
+#paperprototype_3 img:hover {
+    transform: scale(1.5);
 }
 
 /*--------------PAPERPROTOTYPE 3 SLUT---------------*/
@@ -655,7 +713,7 @@ footer {
 /*--------------DATAKODNING START---------------*/
 
 #datakodning {
-    background-color: #ffd1c1;
+    background-color: rgba(255, 255, 255, 0.74);
 }
 
 #datakodning .sectionwrapper {
@@ -663,7 +721,7 @@ footer {
     flex-wrap: wrap;
 }
 
-#datakodning .column{
+#datakodning .column {
     flex-grow: 1;
     flex-basis: 300px;
 }
@@ -673,7 +731,7 @@ footer {
 /*--------------BENCHMARKING START---------------*/
 
 #benchmarking {
-    background-color: #ffd1c1;
+    background-color: rgba(255, 255, 255, 0.74);
 }
 
 #benchmarking .sectionwrapper {
@@ -681,7 +739,7 @@ footer {
     flex-wrap: wrap;
 }
 
-#benchmarking .column{
+#benchmarking .column {
     flex-grow: 1;
     flex-basis: 300px;
 }
@@ -691,7 +749,7 @@ footer {
 /*--------------IDEVALG START---------------*/
 
 #idevalg {
-    background-color: #ffd1c1;
+    background-color: rgba(255, 255, 255, 0.74);
 }
 
 #idevalg .sectionwrapper {
@@ -699,7 +757,7 @@ footer {
     flex-wrap: wrap;
 }
 
-#idevalg .column{
+#idevalg .column {
     flex-grow: 1;
     flex-basis: 300px;
 }
@@ -709,7 +767,7 @@ footer {
 /*--------------APPDESIGN START---------------*/
 
 #app_design {
-    background-color: #ffd1c1;
+    background-color: rgba(255, 255, 255, 0.74);
 }
 
 #app_design .sectionwrapper {
@@ -717,9 +775,19 @@ footer {
     flex-wrap: wrap;
 }
 
-#app_design .column{
+#app_design .column {
     flex-grow: 1;
     flex-basis: 300px;
 }
 
+#app_design .img {
+    width:
+}
+
 /*--------------APPDESIGN SLUT---------------*/
+
+
+#sectionwrapper_links {
+    background-color: rgba(255, 255, 255, 0.74);
+    padding: 0 0 .2vw 0;
+}
