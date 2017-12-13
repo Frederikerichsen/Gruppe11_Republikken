@@ -8,6 +8,10 @@ body {
     padding: 0;
 }
 
+#dok_style {
+    padding: 0 5%;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -45,7 +49,7 @@ a:hover {
     position: fixed;
     background: rgba(0, 0, 0, 0.71);
     width: 100vw;
-    padding: .5em;
+    padding: 0;
     z-index: 100;
 }
 
@@ -353,7 +357,7 @@ footer {
 }
 
 .navn {
-    padding: .5vw 3vw 3vw 3vw;
+    padding: 1% 2% 2% 3%;
     text-align: center;
 }
 
@@ -543,6 +547,34 @@ footer {
 #research_markedet .column {
     flex-grow: 1;
     flex-basis: 300px;
+}
+
+#research_markedet .img1 {
+    width: 70%;
+}
+
+#research_markedet .img2 {
+    width: 65.5%;
+}
+
+#research_markedet .img3 {
+    width:87.5%;
+}
+
+#research_markedet .img1:hover {
+    transform: scale(1.5);
+}
+
+#research_markedet .img2:hover {
+    transform: scale(1.5);
+}
+
+#research_markedet .img3:hover {
+    transform: scale(1.5);
+}
+
+#research_markedet p {
+    padding: 1vw 10vw;
 }
 
 /*--------------RESEARCH SLUT---------------*/
@@ -803,12 +835,28 @@ footer {
     flex-basis: 300px;
 }
 
-#app_design img {
-    width: 50%;
+#app_design .img4 {
+    width: 70%;
+    margin: 6.5% 0;
+}
+#app_design .img5 {
+    width: 70%;
+}
+
+#app_design .img4:hover {
+    transform: scale(1.5)
+}
+#app_design .img5:hover {
+    transform: scale(1.2)
 }
 
 #app_design p {
-    padding: 0 25vw;
+    padding: 0 5vw;
+
+}
+
+#app_design a {
+    text-decoration: underline;
 
 }
 
