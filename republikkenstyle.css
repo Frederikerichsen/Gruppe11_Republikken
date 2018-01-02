@@ -110,10 +110,12 @@ h3 {
     color: black;
     font-size: 1.5em;
 }
+
 #dok_style h2 {
     color: black;
     font-size: 2.5em;
 }
+
 }
 
 h4 {
@@ -142,8 +144,8 @@ footer {
 
 #splash {
     width: 100vw;
-    height: 167.2vw;
-    background-image:url(new_media/desktop4.png);
+    height: 56.3vw;
+    background-image: url(new_media/desktop4.png);
     background-size: cover;
 }
 
@@ -157,7 +159,7 @@ footer {
 @media screen and (min-width: 1025px) and (orientation:landscape) {
     #splash {
         height: 56.3vw;
-        background-image:url(new_media/desktop4.png);
+        background-image: url(new_media/desktop4.png);
     }
     #splash img {
         width: 100%;
@@ -225,13 +227,13 @@ footer {
 }
 
 
-#app h2{
+#app h2 {
     font-size: 6em;
     padding-top: 19%;
     padding-left: 17%;
 }
 
-#app h3{
+#app h3 {
     font-family: 'Bad Script', cursive;
     font-weight: 100;
     font-size: 6em;
@@ -239,7 +241,8 @@ footer {
     margin: 2%;
 
 }
-#app .ikon_img{
+
+#app .ikon_img {
     width: 125px;
     margin: 0 0 0 17%;
 }
@@ -267,6 +270,7 @@ footer {
 #needs .img2 {
     width: 500px;
 }
+
 #needs .img3 {
     width: 667px;
 }
@@ -276,7 +280,7 @@ footer {
     margin: 0 0 1% 0;
 }
 
-#needs  {
+#needs {
     margin-bottom: 50px;
     padding-bottom: 5px;
 }
@@ -315,7 +319,7 @@ footer {
     width: 55%;
     align-self: flex-end;
     padding: 0;
-    margin: 0 7% 0 0 ;
+    margin: 0 7% 0 0;
 }
 
 #benefits .sectionwrapper {
@@ -407,8 +411,8 @@ footer {
 
 }
 
-.mahnaz img{
-    border-radius:80px;
+.mahnaz img {
+    border-radius: 80px;
 }
 
 /*--------------------Pitch--------------------*/
@@ -424,7 +428,7 @@ footer {
     flex-wrap: wrap;
 }
 
-#pitch a{
+#pitch a {
     font-family: Open Sans, sans-serif;
     color: black;
     font-size: 2em;
@@ -432,12 +436,12 @@ footer {
     padding: 0 0 5% 0;
 }
 
-#pitch a:hover{
+#pitch a:hover {
     color: #BD9882;
 
 }
 
-#pitch h1{
+#pitch h1 {
     margin: 5% 0 0 0;
 }
 
@@ -522,7 +526,7 @@ footer {
 #benchmarking,
 #idevalg,
 #app_design,
-#sectionwrapper_links{
+#sectionwrapper_links {
     max-width: 1800px;
     /*KONTROLLERER MAX BREDDE PÅ DINE SECTIONS*/
     margin: 0 auto;
@@ -556,19 +560,20 @@ footer {
     font-family: 'Open Sans', sans-serif;
 }
 
-#dok_style a{
+#dok_style a {
     color: black;
     padding-left: 10px;
     padding-bottom: 20px;
 }
 
-#dok_style a:hover{
+#dok_style a:hover {
     color: #BD9882;
 }
 
 #dok_style p {
     font-size: 1.1em;
 }
+
 #dok_style h2 {
     font-size: 2.5em;
 }
@@ -583,6 +588,7 @@ footer {
     font-size: 1em;
     padding: 5px 0;
 }
+
 #dok_style b {
     font-size: 1.1em;
 }
@@ -614,7 +620,7 @@ footer {
 }
 
 #research_markedet .img3 {
-    width:87.5%;
+    width: 87.5%;
 }
 
 #research_markedet .img1:hover {
@@ -752,7 +758,7 @@ footer {
 #paperprototype_1 .column {
     flex-grow: 1;
     flex-basis: 300px;
-     padding: 2vw;
+    padding: 2vw;
 }
 
 #paperprototype_1 img {
@@ -806,7 +812,7 @@ footer {
 #paperprototype_3 .column {
     flex-grow: 1;
     flex-basis: 300px;
-     padding: 2vw;
+    padding: 2vw;
 }
 
 #paperprototype_3 img {
@@ -852,7 +858,7 @@ footer {
 #benchmarking .column {
     flex-grow: 1;
     flex-basis: 300px;
-     padding: 1vw 15vw;
+    padding: 1vw 15vw;
 }
 
 /*--------------BENCHMARKING SLUT---------------*/
@@ -895,6 +901,7 @@ footer {
     width: 70%;
     margin: 6.5% 0;
 }
+
 #app_design .img5 {
     width: 70%;
 }
@@ -902,6 +909,7 @@ footer {
 #app_design .img4:hover {
     transform: scale(1.5)
 }
+
 #app_design .img5:hover {
     transform: scale(1.2)
 }
@@ -917,7 +925,6 @@ footer {
 }
 
 /*--------------APPDESIGN SLUT---------------*/
-
 
 #sectionwrapper_links {
     background-color: rgba(255, 255, 255, 0.74);
